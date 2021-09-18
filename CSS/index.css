@@ -51,7 +51,7 @@
     
 }
 .container>h2{
-        width:100%;
+        width:100vw;
         line-height: 1.0em;
         height:40px;
         text-align: center;
@@ -78,3 +78,93 @@ text-align: center;
     margin-top:-80px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contacts{
+   background-color: #81645A;
+   text-align: center;
+   color: white;
+   width: 100vw;
+   margin:0;
+   /* margin-left: -3vw; */
+   /* margin-right: -7vw; */
+   
+}
+#form{
+   width:100vw;
+}
+input{
+   width:30vw;
+   height: 8vh;
+   background:transparent;
+   color:white;
+   border-radius: 10px;
+   border-style: none;
+   border:1px solid white;
+   font-size: 17px;
+}
+input placeholder{
+   color:white ;
+}
+#text-area{
+   width:50vw;
+   height: 30vh;
+   background:transparent;
+   margin-left: 2vw;
+   border-radius: 1vw;
+   border-style: none;
+   border:1px solid white;
+   padding-top: 40px;
+   margin-top: 30px;
+   color: white;
+   font-size: 24px;
+}
+::placeholder { 
+   color: white;
+   opacity: 1; 
+ }
+.contacts h2{
+   margin-top: 25px;
+   padding-top: 35px;
+   padding-bottom: 20px;
+
+}
+button{
+   margin-right: 40vw;
+   margin-bottom: 2vh;
+   width:12vw;
+   border-radius: 1vw;
+   background-color: rgb(33, 33, 224);
+   color: white;
+   border-style: none;
+   font-size: 17px;
+   text-align: center;
+   cursor: pointer;
+   padding: auto;
+   display: table-cell;
+   vertical-align: middle;
+   height: 5vh;
+   
+ }
+footer{
+    text-align: center;
+    padding-top: 30px;
+  }
+  footer p{
+    margin-top: 10px;
+  }

@@ -93,12 +93,15 @@ text-align: center;
     margin-top:-80px;
 
 }
+.order-page{
+    height:100vh;
+}
 .orders{
     background-color:#464062;
     border-radius: 20px;
     width: 35vw;
     height: 100vh;
-    margin-left: 20vw;
+    margin-left: 5vw;
     margin-top: 10vh;
     text-align: center;
 }
@@ -121,54 +124,22 @@ select{
     border-style: none;
 
 }
-#resetBtn{
-    background-color: #343050;
-    color:white;
-    margin:1rem;
-    width:auto;
-    text-transform: uppercase;
-    cursor:pointer;
+#amount{
+    margin-top: -85vh;
+}
+#total{
+    margin-top: -30vh;
 
-}
-#submitBtn{
-    background-color: #343050;
-    color:white;
-    margin:1rem;
-    width:auto;
-    text-transform: uppercase;
-    cursor:pointer;
-}
-#submitBtn>a{
-    text-decoration: none;
-    color:white;
-}
-.delivery{
-    
 }
 .customer-details{
-    height:30vh;
-    width:100vw;
-    background-color: red;
+    height:50vh;
+    width:50vw;
+    background-color:#464062;
+    margin-left: 50vw;
+    margin-top: -70vh;
+    border-radius: 2vw;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contacts{
    background-color: #81645A;
    text-align: center;

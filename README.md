@@ -6,26 +6,11 @@
 This is a simple landing page for a  pizza outlet.It allows users to view the menu of the pizza outlet and make an order according to each of their preferences.
 ## Setup/Installation Requirements
 * [Fork my code](https://github.com/devseme/Urban-Pizzas.git) on your terminal and run the project in your files and code editor.
-* Also run my deployed project at [Deloyed-page](https://devseme.github.io/Delani_Studio/)
-## BEHAVIOURAL DRIVEN DEVELOPMENT
+* Also run my deployed project at [Deloyed-page](https://devseme.github.io/Urban-Pizzas/)
 
-On Contact Us Section ,Enter your name if you want to leave a message ['Ian'] name = 'Ian' Enter Email && Message ['Email','Message'] Email && Message Submit Email && Message 'Hi Ian,we have received your message. Thank you for reaching out to us.'
-
-1.Form displays in which a user enters name and email.
- 
- * INPUT-A user entershis/her name,email and message.
- * OUTPUT-a user gets alert for confirmation of message received
- 
-2.Displays error message if wrong details entered
-   * INPUT- ""
-   * OUTPUT- please enter your name and email
-   
-3.Displays error message if details  not  entered
-  * INPUT- ""
-  * OUTPUT- Please fill out this field
     
 ## Known Bugs
-Running the given deployed link on browser,some background images may not show.
+No Known bugs for now
 ## Technologies Used
 HTML,CSS,Javascript,Bootstrap
 ## Support and contact details

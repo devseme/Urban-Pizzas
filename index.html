@@ -54,81 +54,65 @@
 
         <form action="" class="flavors" method="post">
 
-            <div class="flavor">
-                <label for="name">Choose Your Pizza Flavor:</label>
-            <select class="flavor-1" required>
-                <option value="chickenH">Chicken Hawaiian</option>
-                <option value="cheeseB">Cheese Burger</option>
-                <option value="meatD">Meat Deluxe</option>
-                <option value="chickenM">Chicken Macon BBQ</option>
-                <option value="chickenbperi">Chicken and Beef Pepperoni</option>
-                <option value="vegf">Veg Feast</option>
-                <option value="roastvf">Roast Veg & Feta</option>
-                <option value="spiceb">Spice Boerewors</option>
-            </select>
-            </div>
-
-
-            <div class=size>
-                <label for="size">Choose Your Prefferred size Here:</label>
-            <select class="size-1" name="size-1"  id="size" required>
-                <option value="600">REGULAR(ksh 600)</option>
-                <option value="800">MEDIUM(ksh 800)</option>
-                <option value="1000">LARGE(ksh 1000)</option>
-                </select>
-            </div>
-           <div class="crust">
-            <label for="crust">Choose your Preferred Crust:</label>
-            <select class="crust-1" name="crust-1" id="crust" required>
-                <option value="50">Thin crust @ksh 50/=</option>
-                <option value="100">Thick crust @ksh 100/=</option>
-                <option value="150">Flat bread crust @ksh 150/=</option>
-                <option value="200">Custom  crust @ksh 200/=</option>
-                </select>
-           </div>
-           <div class="toppings">
-            <label for="toppings">Choose your Preferred Toppings:</label>
-            <select class="toppings-1" name="toppings-1" id="toppings" required>
-                <option value="50">Tomato toppings @ksh 50/=</option>
-                <option value="50">Onion Toppings @ksh 50/=</option>
-                <option value="50">Mushroom toppings @ksh 50/=</option>
-                <option value="50">Green Pepper toppings @ksh 50/=</option>
-                <option value=""></option>
-                <option value="100">Olives toppings @ksh 100/=</option>
-                <option value="100">Pineapples Toppings @ksh 100/=</option>
-                <option value="100">Sweetcorn toppings @ksh 100/=</option>
-                <option value="100">Macon toppings @ksh 100/=</option>
-                <option value="100">Mince toppings @ksh 100/=</option>
-                <option value=""></option>
-                <option value="150">Beef peperoni toppings @ksh 150/=</option>
-                <option value="150">chicken PeriPeri Toppings @ksh 150/=</option>
-            
-                </select>
-                <label for="number">Number of Pizzas</label>
-                <input type="number" placeholder="number of pizzas" min="1" id="number" required>
-           </div>
-        </form>
-
-            <button type="submit" id="checkout">Total Amount</button>
-       
+       <div class="order-page">    
+           
+        <div class=size>
+        <label for="size">Choose Your Prefferred size Here:</label>
+        
+    <select class="size-1" name="size-1"  id="size" required>
+        <option value="600" data-name= "regular">REGULAR(ksh 600)</option>
+        <option value="800" data-name="medium">MEDIUM(ksh 800)</option>
+        <option value="1000" name="large">LARGE(ksh 1000)</option>
+        </select>
     </div>
- <div class="order-sumarry">
-     <h1>Order Summary</h1>
-     <h2>Helllo There,Your Order Is as Follows:</h2>
-     <ol id="list">
-
-     </ol>
+   <div class="crust">
+    <label for="crust">Choose your Preferred Crust:</label>
+    <select class="crust-1" name="crust-1" id="crust" required>
+        <option value="50" data-name="thin crust">Thin crust @ksh 50/=</option>
+        <option value="100" data-name="thick crust">Thick crust @ksh 100/=</option>
+        <option value="150" name="flat bread crust">Flat bread crust @ksh 150/=</option>
+        <option value="200" name="custom crust">Custom  crust @ksh 200/=</option>
+        </select>
+   </div>
+   <div class="toppings">
+    <label for="toppings">Choose your Preferred Toppings:</label>
+    <select class="toppings-1" name="toppings-1" id="toppings" required>
+        <option value="50" data-name="tomato topping">Tomato toppings @ksh 50/=</option>
+        <option value="50" data-name="onion topping">Onion Toppings @ksh 50/=</option>
+        <option value="50" name="mushroom topping">Mushroom toppings @ksh 50/=</option>
+        <option value="50"name= "green pepper topping">Green Pepper toppings @ksh 50/=</option>
+        <option value=""></option>
+        <option value="100" name="olives topping">Olives toppings @ksh 100/=</option>
+        <option value="100" name="pineapples topping">Pineapples Toppings @ksh 100/=</option>
+        <option value="100" name="sweetcorn topping">Sweetcorn toppings @ksh 100/=</option>
+        <option value="100" name="macon topping">Macon toppings @ksh 100/=</option>
+        <option value="100" name="mince topping">Mince toppings @ksh 100/=</option>
+        <option value=""></option>
+        <option value="150" name="beef peri-peri">Beef peperoni toppings @ksh 150/=</option>
+        <option value="150" name="chicken periperi">chicken PeriPeri Toppings @ksh 150/=</option>
     
- </div>
- <div class="customer-details">
-     <form action="" class="">
-         <input type="text" placeholder="Enter Your Name Here...">
-         <input type="text" placeholder="Enter Your Phone Number..">
-         <input type="text" placeholder="Enter location of delivery..">
+        </select>
+        <label for="number">Number of Pizzas</label>
+        <input type="number" placeholder="number of pizzas" min="1" id="number"   required>
+   </div>
+   </div>
+</form>
 
-     </form>
- </div>
+    <button  id="amount">Total Amount</button>
+    <p id="total"></p>
 
+</div>
+</div>
+<div class="customer-details">
+<form action="" class="">
+ <input type="text" placeholder="Enter Your Name Here...">
+ <input type="text" placeholder="Enter Your Phone Number..">
+ <input type="text" placeholder="Enter location of delivery..">
+
+
+   </div>  
+</div>
+</form>
  <div class="">
      <button class="delivery">Order For Delivery</button>
      <button class="delivery2">pick it yourself</button>
@@ -142,10 +126,8 @@
             
                 <input type="email" placeholder = "Email..." id="email" required>
                      <br>
-        
             <textarea id="text-area" cols="15" rows="20" id="message" placeholder="Your Message Here...."></textarea>
             <br>
-        
         <button type="submit">Submit</button>
    
         </form>

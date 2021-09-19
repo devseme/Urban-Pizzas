@@ -98,7 +98,7 @@ text-align: center;
     border-radius: 20px;
     width: 35vw;
     height: 100vh;
-    margin-left: 30vw;
+    margin-left: 20vw;
     margin-top: 10vh;
     text-align: center;
 }
@@ -141,6 +141,14 @@ select{
 #submitBtn>a{
     text-decoration: none;
     color:white;
+}
+.delivery{
+    
+}
+.customer-details{
+    height:30vh;
+    width:100vw;
+    background-color: red;
 }
 
 

@@ -87,9 +87,9 @@ text-align: center;
 .orders{
     background-color:#464062;
     border-radius: 20px;
-    width: 30%;
+    width: 35vw;
     height: 100vh;
-    margin-left: 40vw;
+    margin-left: 30vw;
     margin-top: 10vh;
     text-align: center;
 }
@@ -103,13 +103,13 @@ label{
     display:block;
     margin:0.5rem;
 }
-input{
+select{
     display:block;
-    width:80%;
+    width:30vw;
     padding: 10px;
-    margin-left:20px;
-    border-radius: 20px;
+    margin-left:2vw;
     border-style: none;
+
 }
 #resetBtn{
     background-color: #343050;

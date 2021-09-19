@@ -1,7 +1,7 @@
 # Urban-Pizzas Website
 
 #### This is my IP4 for prep module at Moringa school
-#### By **Ochenge Ian**
+#### By **Ian Ochenge**
 ## Description
 This is a simple landing page for a  pizza outlet.It allows users to view the menu of the pizza outlet and make an order according to each of their preferences.
 ## Setup/Installation Requirements

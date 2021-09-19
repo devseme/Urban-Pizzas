@@ -178,9 +178,9 @@ input placeholder{
 }
 #text-area{
    width:50vw;
-   height: 30vh;
+   height: 20vh;
    background:transparent;
-   margin-left: 2vw;
+   margin-left: 0vw;
    border-radius: 1vw;
    border-style: none;
    border:1px solid white;

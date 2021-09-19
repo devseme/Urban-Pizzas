@@ -35,8 +35,14 @@
     margin-top: 7vh;
     margin-bottom:5vh;
     align-items: center;
+    width: 15vw;
+    height: 15vh;
+    
+}
+#logo-2{ 
     width: 20vw;
-    height: 50vh;
+    height: 40vh;
+    float:right
     
 }
 
@@ -78,6 +84,56 @@ text-align: center;
     margin-top:-80px;
 
 }
+.orders{
+    background-color:#464062;
+    border-radius: 20px;
+    width: 30%;
+    height: 100vh;
+    margin-left: 40vw;
+    margin-top: 10vh;
+    text-align: center;
+}
+.orders>h3{
+    text-align: center;
+    font-weight:700;
+    font-family: sans-serif;
+
+}
+label{
+    display:block;
+    margin:0.5rem;
+}
+input{
+    display:block;
+    width:80%;
+    padding: 10px;
+    margin-left:20px;
+    border-radius: 20px;
+    border-style: none;
+}
+#resetBtn{
+    background-color: #343050;
+    color:white;
+    margin:1rem;
+    width:auto;
+    text-transform: uppercase;
+    cursor:pointer;
+
+}
+#submitBtn{
+    background-color: #343050;
+    color:white;
+    margin:1rem;
+    width:auto;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+#submitBtn>a{
+    text-decoration: none;
+    color:white;
+}
+
+
 
 
 

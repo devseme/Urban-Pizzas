@@ -24,7 +24,7 @@
     <a href="#Make-order">ORDER HERE  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
     <a href="#Contact Us">CONTACT Us &nbsp;&nbsp;&nbsp;</a>
   </div>
-    
+     
 
   </div>
   <div class="container">
@@ -56,33 +56,67 @@
 
             <div class="flavor">
                 <label for="name">Choose Your Pizza Flavor:</label>
-            <!-- <input name="flavor" type="text" id="flavor" placeholder="pizza flavor" required> -->
-            <select class="flavor-1">
+            <select class="flavor-1" required>
                 <option value="chickenH">Chicken Hawaiian</option>
                 <option value="cheeseB">Cheese Burger</option>
-                <option value="">Chicken Hawaiian</option>
-                <option value="chickenh">Chicken Hawaiian</option>
-                <option value="chickenh">Chicken Hawaiian</option>
-                <option value="chickenh">Chicken Hawaiian</option>
-                <option value="chickenh">Chicken Hawaiian</option>
-                <option value="chickenh">Chicken Hawaiian</option>
+                <option value="meatD">Meat Deluxe</option>
+                <option value="chickenM">Chicken Macon BBQ</option>
+                <option value="chickenbperi">Chicken and Beef Pepperoni</option>
+                <option value="vegf">Veg Feast</option>
+                <option value="roastvf">Roast Veg & Feta</option>
+                <option value="spiceb">Spice Boerewors</option>
             </select>
             </div>
-            <div class=email>
-                <label for="email">User-email</label>
-            <input name="email" type="email" id="email"placeholder="username"  required>
+
+
+            <div class=size>
+                <label for="size">Choose Your Prefferred size Here:</label>
+            <select class="size-1" required>
+                <option value="regular">REGULAR</option>
+                <option value="medium">MEDIUM</option>
+                <option value="large">LARGE</option>
+                </select>
             </div>
-           <div class=password>
-            <label>Password</label>
-            <input type="password"  name="password" placeholder="password"> 
+           <div class="crust">
+            <label for="crust">Choose your Preferred Crust:</label>
+            <select class="crust-1" required>
+                <option value="thin">Thin crust @ksh 50/=</option>
+                <option value="thick">Thick crust @ksh 100/=</option>
+                <option value="flatbread">Flat bread crust @ksh 150/=</option>
+                <option value="custom">Custom  crust @ksh 200/=</option>
+                </select>
            </div>
-           
-           <button type="reset" id="resetBtn">RESET</button>
-            <button type="submit" id="submitBtn"><a href="records.html"> SUBMIT </a></button>
+           <div class="toppings">
+            <label for="toppings">Choose your Preferred Toppings:</label>
+            <select class="toppings-1" required>
+                <option value="tomato">Tomato toppings @ksh 50/=</option>
+                <option value="onions">Onion Toppings @ksh 50/=</option>
+                <option value="mushrooms">Mushroom toppings @ksh 50/=</option>
+                <option value="GreenP">Green Pepper toppings @ksh 50/=</option>
+                <option value=""></option>
+                <option value="olives">Olives toppings @ksh 100/=</option>
+                <option value="pineapples">Pineapples Toppings @ksh 100/=</option>
+                <option value="swwetcorn">Sweetcorn toppings @ksh 100/=</option>
+                <option value="macon">Macon toppings @ksh 100/=</option>
+                <option value="mince">Mince toppings @ksh 100/=</option>
+                <option value=""></option>
+                <option value="beefpep">Beef peperoni toppings @ksh 150/=</option>
+                <option value="onions">chicken PeriPeri Toppings @ksh 150/=</option>
+            
+                </select>
+                <label for="number">Number of Pizzas</label>
+                <input type="number" placeholder="number of pizzas" min="1" required>
+           </div>
         </form>
 
+            <button type="submit" id="checkout">Checkout</button>
+       
     </div>
-
+ <div class="order-sumarry">
+     <h1>Order Summary</h1>
+     <h2>Helllo There,Your Order Is as Follows:</h2>
+     <ol id="list"></ol>
+ </div>
 
 
 
@@ -90,7 +124,7 @@
         <h2>CONTACT  US </h2>
         <form id="pizza-form" >
            
-                <input type="text"  placeholder = "Name..."  id="name" required>&nbsp;&nbsp;&nbsp;&nbsp;
+            
                 <input type="email" placeholder = "Email..." id="email" required>
                      <br>
         

@@ -102,6 +102,7 @@ text-align: center;
 label{
     display:block;
     margin:0.5rem;
+    color:#EEC390;
 }
 select{
     display:block;

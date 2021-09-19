@@ -5,7 +5,7 @@
 ## Description
 This is a simple landing page for a  pizza outlet.It allows users to view the menu of the pizza outlet and make an order according to each of their preferences.
 ## Setup/Installation Requirements
-* [Fork my code](https://github.com/devseme/Delani_Studio.git) on your terminal and run the project in your files and code editor.
+* [Fork my code](https://github.com/devseme/Urban-Pizzas.git) on your terminal and run the project in your files and code editor.
 * Also run my deployed project at [Deloyed-page](https://devseme.github.io/Delani_Studio/)
 ## BEHAVIOURAL DRIVEN DEVELOPMENT
 

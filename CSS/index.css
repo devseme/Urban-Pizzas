@@ -135,7 +135,7 @@ select{
 
 }
 .customer-details{
-    height:50vh;
+    height:70vh;
     width:35vw;
     background-color:#464062;
     margin-left: 50vw;
@@ -143,6 +143,9 @@ select{
     border-radius: 2vw;
     text-align: center;
 
+}
+.private-details{
+    display:none;
 }
 .contacts{
    background-color: #81645A;

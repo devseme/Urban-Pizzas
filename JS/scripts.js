@@ -1,47 +1,65 @@
 //business logic
 
-function totalAmount(size,crust,toppings,number){
-    this.size = size;
-    this.crust = crust;
-    this.toppings = toppings;
-    this.number = number;
-
+function totalAmount(size, crust, toppings, number) {
+  this.size = size;
+  this.crust = crust;
+  this.toppings = toppings;
+  this.number = number;
 }
-      totalAmount.prototype.Price = function(){            
-          return this.size + this.crust + this.toppings ;
-      }
-        totalAmount.prototype.totalForPizza = function(){
-          return this.number*(this.size + this.crust + this.toppings) ;
-        }
-
+totalAmount.prototype.Price = function () {
+  return this.size + this.crust + this.toppings;
+};
+totalAmount.prototype.totalForPizza = function () {
+  return this.number * (this.size + this.crust + this.toppings);
+};
+let finalCharge = 0;
 $(document).ready(function () {
-       $("#amount").click(function(){
-        let pizzaSize = parseInt($("#size").val());
-        let pizzaCrust = parseInt($("#crust").val());
-        let toppings = parseInt($("#toppings").val());
+  $("#amount").click(function () {
+    let pizzaSize = parseInt($("#size").val());
+    let pizzaCrust = parseInt($("#crust").val());
+    let toppings = parseInt($("#toppings").val());
 
-          let total = new totalAmount(pizzaSize,pizzaCrust,toppings)
-            
+    let total = new totalAmount(pizzaSize, pizzaCrust, toppings);
 
-           $("#total").text(total.Price());
-          let numberOfPizzas = parseInt($ ("#number").val());
-             let amountPaid = new totalAmount(pizzaSize,pizzaCrust,toppings,numberOfPizzas);
-               
-             $("#total").text(" Your total amount to pay is : "  + "ksh" + amountPaid.totalForPizza());
+    $("#total").text(total.Price());
+    let numberOfPizzas = parseInt($("#number").val());
+    let amountPaid = new totalAmount(
+      pizzaSize,
+      pizzaCrust,
+      toppings,
+      numberOfPizzas
+    );
 
+    $("#total").text(
+      " Your total amount to pay is : " + "ksh" + amountPaid.totalForPizza()
+    );
+    
 
-     
+  });
+  //ui interface logic
 
-       });
-      
-       $("#delivery-form").submit(function(event){
-           event.preventDefault();
+  $("#formdeliver").click(function (event) {
+    event.preventDefault();
+    let nameEntered = $("#person").val();
+    let locationEntered = $("#place").val();
 
-        let yourName = $("#name-1").val();
+    alert("Hey " + nameEntered + ",We`ve received your order and it will be delivered to " + locationEntered);
+    let pizzaSize = parseInt($("#size").val());
+    let pizzaCrust = parseInt($("#crust").val());
+    let toppings = parseInt($("#toppings").val());
+    let numberOfPizzas = parseInt($("#number").val());
+    let amountPaid = new totalAmount(
+	pizzaSize,
+	pizzaCrust,
+	toppings,
+	numberOfPizzas
+      );
+    finalCharge += amountPaid.totalForPizza();
+    $("#finalamount").text(finalCharge + 200);
 
-        alert("Heey"+ " " + yourName + ",We`ve received your order and it will be delivered soon.Thanks!")
-       });
-       
+  });
+   $("#orderpizza").click(function(){
 
+	$(".private-details").slideToggle(1000);
+   })
 });
-

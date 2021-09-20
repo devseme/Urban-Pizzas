@@ -1,5 +1,5 @@
 .header{
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     background-color: #4D436B;
 
@@ -9,10 +9,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: -80vh;
+    margin-top: -60vh;
     position: relative;
     margin-left: 5vw;
-    margin-right: -15vw;
+    margin-right: -25vw;
 
 
 }
@@ -25,25 +25,29 @@
 
 }
 .header>h1{
-    margin-left: 5vw;
+    margin-left: 35vw;
     width: 30vw;
     padding: 0.5vw;
+    text-align: center;
+    font-size: 3.5vw;
     
 }
 .header h3{
-    margin-left: 40vw;
-    margin-top: 40vh;
+    margin-left: 20vw;
+    margin-top: 15vh;
     width: 25vw;
     font-size: 3vw;
     text-align: center;
+    font-style: italic;
 
 }
 #logo-1{
-    margin-left: 10vw;
+    margin-left: 5vw;
     width: 15vw;
     height: 15vh;
     border-radius: 500vw;
-    margin-top: -200vh;
+    margin-top: -5vh;
+    border: 3px solid #EEC390;
     
 }
 #logo-2{ 
@@ -51,14 +55,15 @@
     height: 40vh;
     float:right;
     margin-top: -30vh;
-    margin-right: 10vw;
+    margin-right: 15vw;
+    border-radius: 3vw;
     
 }
 
 .container{/*styling for the flexbox and its items*/
     background-color:  #EEC390;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -68,7 +73,7 @@
 .container>h2{
         width:100vw;
         line-height: 1.0em;
-        height:40px;
+        height:4vh;
         text-align: center;
 
  }
@@ -80,21 +85,19 @@
  }
  .container>div>p{
      margin-top: auto;
-text-align: center;
+     text-align: center;
  }
- 
-
 .products{
     width: 24%;
-    height:350px;
-    background-color: #ffffff;
-    padding: 10px;
-    margin:10px;
-    margin-top:-80px;
+    height:55vh;
+    padding: 2vw;
+    margin:2vw;
+    margin-top:-10vh;
 
 }
 .order-page{
     height:100vh;
+
     
 }
 .orders{
@@ -111,6 +114,10 @@ text-align: center;
     font-weight:700;
     font-family: sans-serif;
 
+}
+.orders>h2{
+    color:#ffffff;
+    margin:2vw;
 }
 label{
     display:block;
@@ -135,19 +142,19 @@ select{
     font-size: 2.0vw
 
 }
-#finalamount,#standard-delivery{
-color: #ffffff;
+#total,#standard-delivery,#finalamount{
+color: #EEC390;
 font-size: 2.0vw;
 font-style: italic;
 }
 
 
 .customer-details{
-    height:70vh;
+    height:100vh;
     width:35vw;
     background-color:#464062;
     margin-left: 50vw;
-    margin-top: -70vh;
+    margin-top: -100vh;
     border-radius: 2vw;
     text-align: center;
 
@@ -155,6 +162,7 @@ font-style: italic;
 .private-details{
     display:none;
 }
+
 .contacts{
    background-color: #81645A;
    text-align: center;
@@ -210,7 +218,7 @@ button{
    background-color: rgb(33, 33, 224);
    color: white;
    border-style: none;
-   font-size: 17px;
+   font-size: 1.2vw;
    text-align: center;
    cursor: pointer;
    padding: auto;
@@ -227,8 +235,19 @@ button{
  }
 footer{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10vh;
   }
   footer p{
-    margin-top: 10px;
+    margin-top: 4vh;
   }
+
+  @media screen and (max-width: 500px) {
+    body{
+        background-size: contain;
+      
+    }
+
+
+
+}
+

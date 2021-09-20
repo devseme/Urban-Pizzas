@@ -39,7 +39,7 @@ $(document).ready(function () {
 
         let yourName = $("#name-1").val();
 
-        alert("Heey"+ " " + yourName + ",We`ve received your order and it`s being worked on!")
+        alert("Heey"+ " " + yourName + ",We`ve received your order and it will be delivered soon.Thanks!")
        });
        
 

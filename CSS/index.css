@@ -95,6 +95,7 @@ text-align: center;
 }
 .order-page{
     height:100vh;
+    
 }
 .orders{
     background-color:#464062;
@@ -134,6 +135,13 @@ select{
     font-size: 2.0vw
 
 }
+#finalamount,#standard-delivery{
+color: #ffffff;
+font-size: 2.0vw;
+font-style: italic;
+}
+
+
 .customer-details{
     height:70vh;
     width:35vw;

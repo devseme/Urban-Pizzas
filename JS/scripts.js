@@ -43,7 +43,7 @@ $(document).ready(function () {
     let nameEntered = $("#person").val();
     let locationEntered = $("#place").val();
 
-    alert("Hey " + nameEntered + ",We`ve received your order and it will be delivered to " + locationEntered);
+    alert("Hey " + nameEntered + ",We`ve received your order and it will be delivered to " + locationEntered + "soon!");
     let pizzaSize = parseInt($("#size").val());
     let pizzaCrust = parseInt($("#crust").val());
     let toppings = parseInt($("#toppings").val());
@@ -55,7 +55,8 @@ $(document).ready(function () {
 	numberOfPizzas
       );
     finalCharge += amountPaid.totalForPizza();
-    $("#finalamount").text(finalCharge + 200);
+    $("#finalamount").text("Your Total final charge is Ksh "  +  (finalCharge + 200));
+
 
   });
    $("#orderpizza").click(function(){
